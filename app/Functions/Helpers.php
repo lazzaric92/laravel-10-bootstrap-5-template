@@ -12,7 +12,7 @@ class Helpers {
         };
 
         // > se lo trovi, leggi riga per riga
-        while($csvRow = fgetcsv($fileData) !== false){
+        while(($csvRow = fgetcsv($fileData)) !== false){
             $csvData[] = $csvRow;
         }
 
